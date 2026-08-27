@@ -4,8 +4,8 @@ import { Constants } from 'librechat-data-provider';
 import type { TStartupConfig } from 'librechat-data-provider';
 import CopyButton from '~/components/Messages/Content/CopyButton';
 import { useGetStartupConfig } from '~/data-provider';
-import { useLocalize } from '~/hooks';
 import { DEFAULT_APP_TITLE } from '~/utils';
+import { useLocalize } from '~/hooks';
 
 const UNKNOWN_PLACEHOLDER = '—';
 

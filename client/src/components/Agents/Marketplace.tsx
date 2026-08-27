@@ -8,10 +8,10 @@ import { useGetEndpointsQuery, useGetAgentCategoriesQuery } from '~/data-provide
 import MarketplaceAdminSettings from './MarketplaceAdminSettings';
 import OpenSidebar from '~/components/Chat/Menus/OpenSidebar';
 import { SidePanelGroup } from '~/components/SidePanel';
+import { cn, DEFAULT_APP_TITLE } from '~/utils';
 import CategoryTabs from './CategoryTabs';
 import SearchBar from './SearchBar';
 import AgentGrid from './AgentGrid';
-import { cn, DEFAULT_APP_TITLE } from '~/utils';
 
 interface AgentMarketplaceProps {
   className?: string;
