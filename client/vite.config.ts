@@ -140,11 +140,11 @@ export default defineConfig(({ command }) => ({
       },
       includeAssets: [],
       manifest: {
-        name: 'LibreChat',
-        short_name: 'LibreChat',
+        name: 'Chat S&A',
+        short_name: 'Chat S&A',
         display: 'standalone',
-        background_color: '#000000',
-        theme_color: '#009688',
+        background_color: '#ffffff',
+        theme_color: '#0F4068',
         icons: [
           {
             src: 'assets/favicon-32x32.png',

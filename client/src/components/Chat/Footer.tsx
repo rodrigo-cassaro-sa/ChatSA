@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { Constants } from 'librechat-data-provider';
 import type { TStartupConfig } from 'librechat-data-provider';
 import { useGetStartupConfig } from '~/data-provider';
+import { DEFAULT_APP_TITLE } from '~/utils';
 import { useLocalize } from '~/hooks';
 
 type FooterProps = {
@@ -39,10 +40,7 @@ function Footer({ className, startupConfig }: FooterProps) {
   const mainContentParts = (
     typeof config?.customFooter === 'string'
       ? config.customFooter
-      : '[LibreChat ' +
-        Constants.VERSION +
-        '](https://librechat.ai) - ' +
-        localize('com_ui_latest_footer')
+      : `${DEFAULT_APP_TITLE} ${Constants.VERSION} - S&A Imunizações`
   ).split('|');
 
   useEffect(() => {

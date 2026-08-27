@@ -5,6 +5,7 @@ import type { TStartupConfig } from 'librechat-data-provider';
 import CopyButton from '~/components/Messages/Content/CopyButton';
 import { useGetStartupConfig } from '~/data-provider';
 import { useLocalize } from '~/hooks';
+import { DEFAULT_APP_TITLE } from '~/utils';
 
 const UNKNOWN_PLACEHOLDER = '—';
 
@@ -27,7 +28,7 @@ function buildDiagnosticsBlob(
   buildInfo: TStartupConfig['buildInfo'] | undefined,
 ): string {
   const lines: string[] = [
-    `LibreChat version: ${version}`,
+    `${DEFAULT_APP_TITLE} version: ${version}`,
     `Commit: ${buildInfo?.commit ?? UNKNOWN_PLACEHOLDER}`,
     `Branch: ${buildInfo?.branch ?? UNKNOWN_PLACEHOLDER}`,
     `Build date: ${formatBuildDate(buildInfo?.buildDate)}`,
